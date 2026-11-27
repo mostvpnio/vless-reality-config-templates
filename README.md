@@ -10,6 +10,25 @@
 > (`YOUR_SERVER`, `YOUR_UUID`, `YOUR_PUBLIC_KEY`, `YOUR_SHORT_ID`, `YOUR_SNI`).
 > Подставьте параметры своего сервера и импортируйте в клиент.
 
+## 简体中文说明
+
+本仓库提供 **VLESS + Reality 协议的客户端配置模板**，适用于 Hiddify、Happ、
+V2RayN、NekoBox / sing-box 等兼容客户端（Xray / sing-box 内核）。Reality 将流量
+伪装成到大型网站的正常 HTTPS 握手，因此在 2026 年仍是少数能在俄罗斯网络环境下
+稳定连接的方案之一。
+
+> 文件中**不包含任何真实密钥或密码**，只有占位符（`YOUR_SERVER`、`YOUR_UUID`、
+> `YOUR_PUBLIC_KEY`、`YOUR_SHORT_ID`、`YOUR_SNI`）。请替换为你自己服务器的参数后
+> 导入客户端。
+
+**占位符说明：** `YOUR_SERVER` = Reality 服务器的 IP 或域名；`YOUR_PORT` = 端口
+（Reality 通常为 `443`）；`YOUR_UUID` = 用户 UUID；`YOUR_PUBLIC_KEY` = Reality
+公钥（`pbk`）；`YOUR_SHORT_ID` = Reality short id（`sid`）；`YOUR_SNI` = 用于伪装
+的 SNI（如 `www.icloud.com`）。
+
+通用导入链接、Xray JSON、sing-box JSON 模板见下方章节，内容通用。模板由
+[MostVPN](https://mostvpn.io) 团队维护。
+
 ## Плейсхолдеры
 
 | Плейсхолдер | Что означает |
